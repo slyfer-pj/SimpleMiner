@@ -1,0 +1,3 @@
+[submodule "PersonalGameEngine"]
+	path = PersonalGameEngine
+	url = https://github.com/slyfer-pj/PersonalGameEngine.git
