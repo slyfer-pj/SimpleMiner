@@ -1,17 +1,12 @@
-Just regularly build and run. Nothing else required.
+SimpleMiner:
 
-Time execution for tasks:
-1) Time to generate a chunk using Perlin noise, etc. - Worst = 4.54ms, Average = 1.685ms
-2) Time to load a chunk from disk, including RLE decompression -  Worst = 0.52ms, Average = 0.21ms
-3) Time to save a chunk to disk, including RLE compression - Worst = 1.26ms, Average = 0.786ms
-4) Time to rebuild a chunk’s CPU-side vertex array - Worst = 3.71ms, Average = 1.60ms
-5) Time to resolve all dirty lighting each frame (first 20 frames) - Worst = 0.93ms, Average = 0.36ms`
+The goal of this project was to make a clone of Minecraft and through that learn how to manager large worlds and generate them through procedural generation. It was also a good exercise in implementing various optimizations in order to reduce the render time of large worlds.
 
-Frame times:
-				Debug	|	DebugInline	|	FastBreak	|	Release
-1) While activating chunks	~47ms		~46ms			~15ms			~2.3ms
-2) After world has stabilized	~2.3ms		~2.3ms			~0.7ms			~0.6ms
-
-
-Note: For A04, the camera distance adjusting for over the shoulder and fixed angle tracking was not documented in the 
-video recording for that assignment as it was implemented after recording the video.
+Key Features:
+1. Load 900 chunks at once with a total of 1 million+ verts with a stable 60 fps.
+2. Terrain generation using Perlin noise.
+3. Surface lighting using block propagation technique.
+4. Translucent water and vertex animation to simulate waves.
+5. Corrective physics for player vs the world.
+6. Different camera modes such as first person, over the shoulder, fixed angle.
+7. World generation is multithreaded using an engine side Job system.
