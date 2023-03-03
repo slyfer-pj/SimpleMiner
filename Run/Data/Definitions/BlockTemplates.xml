@@ -1,0 +1,11 @@
+<Templates>
+  <BlockTemplate name="tree">
+    <TemplateEntry blockIndex="14" offset="0,0,0" />
+    <TemplateEntry blockIndex="14" offset="0,0,1" />
+    <TemplateEntry blockIndex="14" offset="0,0,2" />
+    <TemplateEntry blockIndex="15" offset="0,1,2" />
+    <TemplateEntry blockIndex="15" offset="0,-1,2" />
+    <TemplateEntry blockIndex="15" offset="1,0,2" />
+    <TemplateEntry blockIndex="15" offset="-1,0,2" />
+  </BlockTemplate>
+</Templates>
